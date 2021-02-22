@@ -1,0 +1,42 @@
+.navbar {
+  width: 100%;
+  height: 11vh;
+  background: #111;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+  #{&}__brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 300; 
+  }
+
+  .nav__links {
+    margin-left: auto;
+    
+    .nav__item {
+      .nav__link {
+        text-decoration: none;
+        color: #fff;
+        background-color: coral;
+        padding: 7px 10px;
+        border-radius: 5px; 
+        font-weight: 500;
+        font-size: 14px;
+
+        &:focus{
+          background: #e0430a;
+          transition: .5s ease-out;
+        }
+      }
+    }
+
+  }
+
+
+}
+
+
+
