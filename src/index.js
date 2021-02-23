@@ -1,9 +1,15 @@
+import { Suspense } from "react"
 import { render } from "react-dom"
 
 import App from "./App"
 import "./styles/index.scss"
 
-render(<App />, document.getElementById("root"))
+render(
+  <Suspense fallback={<p>...</p>}>
+    <App />
+  </Suspense>,
+  document.getElementById("root")
+)
 
 // regsiter service worker
 if("serviceWorker" in navigator){

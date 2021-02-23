@@ -29,6 +29,10 @@ let plugins= [
       {
         from: path.resolve(__dirname, "src/icons"),
         noErrorOnMissing: true
+      },
+      {
+        from: path.resolve(__dirname, "src/netlify.toml"),
+        noErrorOnMissing: true
       }
     ]
   })
