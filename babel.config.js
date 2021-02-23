@@ -14,7 +14,7 @@ module.exports = {
         corejs: 3, 
         targets: "defaults", 
       }
-    ]
+    ],
     [
       "@babel/preset-react",
       {
